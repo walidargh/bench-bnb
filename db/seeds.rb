@@ -5,18 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-lat_min = 37
-lng_min = -123
+
 offset = 0.001
 def rand_lat
-	lat_min = 37
-	offset = 0.001
+	lat_min = 37.7
+	offset = 0.0001
 	lat_min + offset*rand(1000)
 end
 
 def rand_lng
-	lng_min = -123
-	offset = 0.001
+	lng_min = -122.5
+	offset = 0.0001
 	lng_min + offset*rand(1000)
 end
 
@@ -25,6 +24,6 @@ def description
 end
 
 
-100.times do
+10.times do
 	Bench.create!(description: description, lat: rand_lat, lng: rand_lng)
 end

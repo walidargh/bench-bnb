@@ -1,7 +1,7 @@
 var AppDispatcher = require('../dispatcher/dispatcher'),
 		BenchConstants = require('../constants/bench_constants');
 
-ServerActions = {
+var ServerActions = {
   receiveAllBenches: function(benches){
     AppDispatcher.dispatch({
       actionType: BenchConstants.BENCHES_RECEIVED,

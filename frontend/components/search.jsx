@@ -5,11 +5,12 @@ var Map = require('./map');
 var BenchesIndex = require('./benches_index');
 
 var Search = React.createClass({
+
 	render: function () {
 		return (
 			<div>
 				<Map />
-				<Index />
+				<BenchesIndex />
 		</div>
 	);
 	}

@@ -7,13 +7,13 @@ var BenchesIndex = React.createClass({
 		return {benches: BenchStore.all()};
 	},
 
-	_onChange: function () {
-		ClientActions.fetchBenches();
-	},
+	// _onChange: function () {
+	// 	ClientActions.fetchBenches();
+	// },
 
-	componentDidMount: function () {
-		BenchStore.addListener(this._onChange);
-	},
+	// componentDidMount: function () {
+	// 	BenchStore.addListener(this._onChange);
+	// },
 
 	render: function () {
 		console.log('hello');
